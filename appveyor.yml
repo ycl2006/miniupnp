@@ -8,10 +8,9 @@ build_script:
   - appveyor AddCompilationMessage "Building miniupnpc"
   - mingw32-make -f Makefile.mingw
   - mingw32-make -f Makefile.mingw pythonmodule PYTHON=C:\Python27\python
-  - mingw32-make -f Makefile.mingw pythonmodule PYTHON=C:\Python27-x64\python
   - mingw32-make -f Makefile.mingw pythonmodule PYTHON=C:\Python36\python
-  - mingw32-make -f Makefile.mingw pythonmodule PYTHON=C:\Python36-x64\python
-#  - upnpc-static.exe -l
+#  - mingw32-make -f Makefile.mingw pythonmodule PYTHON=C:\Python27-x64\python
+#  - mingw32-make -f Makefile.mingw pythonmodule PYTHON=C:\Python36-x64\python
 
 after_build:
   - 7z a ..\miniupnpc-%APPVEYOR_BUILD_VERSION%.zip *.exe *.dll *.a *.lib
