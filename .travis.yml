@@ -12,6 +12,9 @@ addons:
     - libevent-dev
     - libnfnetlink-dev
     - uuid-dev
+    - libssl-dev
+    - libmnl-dev
+    - libnftnl-dev
 
 # container-based builds
 sudo: false
