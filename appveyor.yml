@@ -1,5 +1,10 @@
 version: '2.1.{build}'
 
+image:
+  - Visual Studio 2013
+  - Visual Studio 2015
+  - Visual Studio 2017
+
 install:
   - set PATH=%PATH%;C:\msys64\mingw32\bin
 
