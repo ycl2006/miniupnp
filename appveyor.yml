@@ -13,7 +13,8 @@ build_script:
   - appveyor AddCompilationMessage "Building miniupnpc"
   - mingw32-make -f Makefile.mingw
   - mingw32-make -f Makefile.mingw pythonmodule PYTHON=C:\Python27\python
-  - mingw32-make -f Makefile.mingw pythonmodule PYTHON=C:\Python37\python
+  - C:\Python37\python setypmingw32.py build
+  - C:\Python37\python setypmingw32.py install --skip-build
 #  - mingw32-make -f Makefile.mingw pythonmodule PYTHON=C:\Python27-x64\python
 #  - mingw32-make -f Makefile.mingw pythonmodule PYTHON=C:\Python36-x64\python
 
